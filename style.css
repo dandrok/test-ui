@@ -37,12 +37,11 @@ img {
   display: flex;
   width: 100%;
   margin: 0px auto;
-  background: white;
   height: 100vh;
 }
 
 .container .text-block {
-  width: 37.645448%;
+  min-width: 37.645448%;
   background: #e3e3e3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,6 +53,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .container .text-block .text-wrapper {
@@ -66,13 +68,8 @@ img {
   height: 100vh;
 }
 
-.container .image-block .image-container img {
-  width: auto;
-}
-
 @media only screen and (max-height: 749px) {
   img {
-    width: auto;
     max-height: 100%;
   }
 }
